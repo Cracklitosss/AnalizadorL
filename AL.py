@@ -7,7 +7,7 @@ TOKENS = [
     ("NUMERO_FLOAT", r"-?\d*\.\d+|-?\d+\."),
     ("NUMERO", r"-?\d+"),
     ("LITERAL_CADENA", r'"(?:\\.|[^"\\])*"'),
-    ("OPERADOR", r"[+\-*/=!&|]+"),
+    ("OPERADOR", r"[+\-*/=!]"),
     ("OPERADOR_LOGICO", r"&&|\|\|"),
     ("OPERADOR_COMPARACION", r"!==|===|==|!=|>=|<=|>|<"),
     ("DELIMITADOR", r"[;{}():]"),
@@ -45,8 +45,6 @@ def analizador_lexico(codigo_fuente):
                 next_char = codigo_fuente[next_pos]
                 if next_char.isalnum() or next_char == '_':
                     print(f"\nError en línea {linea}: Identificador inválido - No se permiten guiones medios en identificadores")
-        
-
 
         if pos > 0 and codigo_fuente[pos] == '-':
             prev_token = tokens[-1] if tokens else None
@@ -71,7 +69,6 @@ def analizador_lexico(codigo_fuente):
             
     return tokens
 
-# Entradas para probar el analizador lexico
 codigo_fuente = """
 string señal = "México";
 float año = 2024;

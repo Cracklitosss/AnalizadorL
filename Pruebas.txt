@@ -1,0 +1,84 @@
+// PRUEBA 1: Caracteres especiales y acentos
+string señal = "México";
+float año = 2024;
+int días = 365;
+
+// PRUEBA 2: Operadores compuestos
+int x = 5;
+x += 3;
+x -= 2;
+x *= 4;
+x /= 2;
+x++;
+x--;
+
+// PRUEBA 3: Cadenas con caracteres especiales
+string str2 = "Texto con \n salto de línea";
+string str3 = "Texto con \t tabulación";
+
+// PRUEBA 4: Operadores lógicos complejos
+if (x > 0 && y < 10 || z == 0) {
+    if (a !== b && !c || d >= e) {
+        return true;
+    }
+}
+
+// PRUEBA 5: Espacios y tabulaciones mixtas
+if (x > 0) {
+    y = 1;
+        z = 2;
+    w    =     3;
+}
+
+// PRUEBA 6: Operaciones matemáticas complejas
+float resultado = (5 + 3) * 2 / (1 - 0.5);
+int x = ((10 + 5) * 3) - (8 / 2);
+float y = 3.14159 * radio * radio;
+
+// PRUEBA 7: Cadenas multilínea y caracteres Unicode
+string texto = "Primera línea
+Segunda línea
+Tercera línea";
+string emoji = "😀 👍 🎉";
+string unicode = "∑∏∆∞≠≤≥";
+
+// PRUEBA 8: Comentarios incompletos para buscar errores
+// Comentario normal
+/* Comentario sin cerrar
+int x = 5;
+
+// PRUEBA 9: Números en diferentes formatos
+float a = .5;
+float b = 10.;
+float c = -1-10;
+float c = -1--15;
+float d = -3.14;
+int e = -42;
+
+// PRUEBA 10: Identificadores límite
+int _variable = 1;
+int variable123 = 2;
+int 123variable = 3; # No valido
+int mi-variable = 4; # No valido
+
+// PRUEBA 11: Caracteres no válidos
+int x = 5;
+float y = @2.5; # No valido
+string z = "Hola#Mundo";
+
+// PRUEBA 12: Palabras reservadas como parte de identificadores
+int whileLoop = 1;
+string ifCondition = "test";
+float returnValue = 3.14;
+
+// PRUEBA 13: Operadores Logicos con comparaciones
+if (x > 0 && y < 10 || z == 15) {
+    x = y & z;
+}
+
+//PRUEBA 14: Operadores de comparación
+if (x == y) {
+    z++;
+} else if (x != y && z >= 15) {
+    z--;
+}
